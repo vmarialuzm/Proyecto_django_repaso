@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'ProyectoWebApp.apps.ProyectowebappConfig',
     'servicios.apps.ServiciosConfig',
     'blog.apps.BlogConfig',
+    'contacto.apps.ContactoConfig',
 ]
 
 MIDDLEWARE = [
@@ -129,3 +130,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Configuracion de email
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'  # El servidor SMTP que usarás
+EMAIL_PORT = 587  # El puerto del servidor SMTP
+EMAIL_USE_TLS = True  # Usar TLS para una conexión segura
+EMAIL_HOST_USER = 'vmarialuzm@gmail.com'  # Tu dirección de correo electrónico
+EMAIL_HOST_PASSWORD = 'skpybonpzelctehe'  # Tu contraseña de correo electrónico

@@ -1,0 +1,28 @@
+{% extends "ProyectoWebApp/base.html" %}
+
+{% block content %}
+{% load static %}
+
+<section class="page-section" id="contact">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Contact Us</h2>
+            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+        </div>   
+        
+        {% if "valido" in request.GET %}
+            <p style="color: white;">Información enviada correctamente, gracias</p>
+        {% endif %}
+
+        <form action="" method="POST">
+            {% csrf_token %}
+            <table style="color: white;margin:20px auto;">{{miFormulario.as_table}}</table>
+            <div style="text-align: center;">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+            
+        </form> 
+    </div>
+</section>
+    
+{% endblock %}
