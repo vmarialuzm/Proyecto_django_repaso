@@ -10,6 +10,11 @@
             <h2 class="section-heading text-uppercase">Tienda</h2>
             <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
         </div>
+
+        <div style="float:right;">
+            <p style="color: red;">Total: {{importe_total_carro}}</p>
+        </div>
+
         <div class="row">
 
             {% for producto in productos %}
@@ -17,15 +22,13 @@
             <div class="col-lg-4 col-sm-6 mb-4">
                 <!-- Portfolio item 1-->
                 <div class="portfolio-item">
-                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="{{producto.imagen.url}}" alt="..." />
-                    </a>
+    
+                    <img class="img-fluid" src="{{producto.imagen.url}}" alt="..." />
+
                     <div class="portfolio-caption">
                         <div class="portfolio-caption-heading">{{producto.nombre}}</div>
-                        <div class="portfolio-caption-subheading text-muted">{{producto.precio}}</div>
+                        <div class="portfolio-caption-subheading text-muted">S/ &nbsp; {{producto.precio}} </div>
+                        <div> <a href="#" class="btn btn-success"> Agregar al carro </a></div>
                     </div>
                 </div>
             </div>
