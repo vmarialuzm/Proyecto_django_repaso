@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'contacto.apps.ContactoConfig',
     'tienda.apps.TiendaConfig',
     'carro.apps.CarroConfig',
+    'autenticacion.apps.AutenticacionConfig'
 ]
 
 MIDDLEWARE = [
