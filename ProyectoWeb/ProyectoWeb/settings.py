@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import os
+from django.contrib.messages import constants as mensajes_de_error
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -152,5 +153,14 @@ CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
 CRISPY_TEMPLATE_PACK='bootstrap4'
 
 #Podemos modificar a donde ira el login y tambien vamos a definir quien es login
-LOGIN_URL = 'logear'
-LOGIN_REDIRECT_URL = "Home"
+#LOGIN_URL = 'logear'
+#LOGIN_REDIRECT_URL = "Home"
+
+# messages
+MESSAGE_TAGS={
+    mensajes_de_error.DEBUG:'debug',
+    mensajes_de_error.INFO:'info',
+    mensajes_de_error.SUCCESS:'success',
+    mensajes_de_error.WARNING:'warning',
+    mensajes_de_error.ERROR:'danger',
+}
