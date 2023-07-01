@@ -8,7 +8,7 @@
 <section class="page-section">
     <div class="container">
         <div class="text-center">
-            <h2 class="section-heading text-uppercase">Formulario de registro</h2>
+            <h2 class="section-heading text-uppercase">Formulario de Login</h2>
         </div>  
 
         <form method="POST">
@@ -16,7 +16,7 @@
             {% csrf_token %}
             <div style="width: 75%; margin: auto;">
                 {{form|crispy}}
-                <button type="submit" class="btn btn-success">Registrate</button>
+                <button type="submit" class="btn btn-success">Login</button>
             </div>
 
         </form>

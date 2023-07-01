@@ -44,7 +44,9 @@ INSTALLED_APPS = [
     'contacto.apps.ContactoConfig',
     'tienda.apps.TiendaConfig',
     'carro.apps.CarroConfig',
-    'autenticacion.apps.AutenticacionConfig'
+    'autenticacion.apps.AutenticacionConfig',
+    'crispy_forms',
+    'crispy_bootstrap4',
 ]
 
 MIDDLEWARE = [
@@ -143,3 +145,12 @@ EMAIL_PORT = 587  # El puerto del servidor SMTP
 EMAIL_USE_TLS = True  # Usar TLS para una conexión segura
 EMAIL_HOST_USER = 'vmarialuzm@gmail.com'  # Tu dirección de correo electrónico
 EMAIL_HOST_PASSWORD = 'skpybonpzelctehe'  # Tu contraseña de correo electrónico
+
+# crispy forms
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
+CRISPY_TEMPLATE_PACK='bootstrap4'
+
+#Podemos modificar a donde ira el login y tambien vamos a definir quien es login
+LOGIN_URL = 'logear'
+LOGIN_REDIRECT_URL = "Home"
