@@ -154,8 +154,8 @@ CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
 CRISPY_TEMPLATE_PACK='bootstrap4'
 
 #Podemos modificar a donde ira el login y tambien vamos a definir quien es login
-#LOGIN_URL = 'logear'
-#LOGIN_REDIRECT_URL = "Home"
+LOGIN_URL = 'logear'
+LOGIN_REDIRECT_URL = "Home"
 
 # messages
 MESSAGE_TAGS={
