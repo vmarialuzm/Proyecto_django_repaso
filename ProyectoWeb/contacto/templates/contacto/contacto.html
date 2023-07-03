@@ -13,7 +13,7 @@
             <p style="color: white;">Información enviada correctamente, gracias</p>
         {% endif %}
 
-        <form action="" method="POST">
+        <form action="{% url 'Contacto' %}" method="POST">
             {% csrf_token %}
             <table style="color: white;margin:20px auto;">{{miFormulario.as_table}}</table>
             <div style="text-align: center;">
