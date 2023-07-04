@@ -89,11 +89,11 @@ WSGI_APPLICATION = 'ProyectoWeb.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'gestion_pedidos',
+        'NAME': 'railway',
         'USER': 'root',
-        'PASSWORD': '990122754Luz',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'PASSWORD': '5VDjpxLvFLbL553jBSrn',
+        'HOST': 'containers-us-west-108.railway.app',
+        'PORT': '6920',
     }
 }
 
